@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPMS Bâtiment</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/e775fd41d0.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="acceuil.html" class="anav"><img src="logo.png" alt="logo" id="logonav" style="width: 60%; margin-top: 40%; margin-left: 5%; border-radius: 5px;"></a></div>
+            <ul class="links">
+                <li class="navbarli"><a href="acceuil.html" class="anav">Acceuil</a></li>
+                <li class="navbarli"><a href="presentation.html" class="anav">Présentation</a></li>
+                <li class="navbarli"><a href="chantiers.html" class="anav">Chantiers</a></li>
+                <li class="navbarli"><a href="emplois.html" class="anav">Emplois</a></li>
+                <li class="navbarli"><a href="contact.html" class="anav">Clients</a></li>
+            </ul>
+            <a href="mailto:mpmsbatiment@gmail.com" class="action_btn">Nous contacter</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li class="navbarli"><a href="acceuil.html" class="anav">Acceuil</a></li>
+            <li class="navbarli"><a href="presentation.html" class="anav">Présentation</a></li>
+            <li class="navbarli"><a href="emplois.html" class="anav">Emplois</a></li>
+            <li class="navbarli"><a href="contact.html" class="anav">Clients</a></li>
+            <li class="navbarli"><a href="mailto:mpmsbatiment@gmail.com" class="action_btn" class="anav">Nous contacter</a></li>
+        </div>
+    </header> 
+
+    <div class="formulaire">
+        <h1>Nous contacter</h1>
+        <p>Une demande de chantier, une demande de devis, 
+            ou tout simplement un message à nous faire passer ? 
+            Remplissez ce formulaire afin de prendre contact avec nous !</p>
+        <form method="POST" action="https://formsubmit.co/mpmsbatiment@gmail.com">
+            <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="DUPONT" required>
+            </div>
+            <div>
+                <label for="nom">Votre prénom</label>
+                <input type="text" id="nom" name="nom" placeholder="Michel" required>
+            </div>
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Sujet de votre message</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet du message</option>
+                    <option value="devis">Devis</option>
+                    <option value="plans">Plans</option>
+                    <option value="chantier">Demande de chantier</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Bonjour, je vous contacte car..." required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="logov2.png" class="logofoot">
+                <p>MPMS Bâtiment veille en priorité à la bonne qualité de nos prestations tout en assurant un environnement de travail propice à la sécurité de nos employés, et ce dans des délais convenables.</p>
+            </div>
+            <div class="col">
+                <h3>Locaux <div class="underline"><span></span></div></h3>
+                <p>1 Rue du Vexin</p>
+                <p>78250 Hardricourt</p>
+                <p class="email-id">mpmsbatiment@gmail.com</p>
+                <h4>07 85 11 83 71</h4>
+            </div>
+            <div class="col">
+                <h3>Liens <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li class="footerli"><a href="acceuil.html">Acceuil</a></li>
+                    <li class="footerli"><a href="presentation.html">Présentation</a></li>
+                    <li class="footerli"><a href="chantiers.html">Chantiers</a></li>
+                    <li class="footerli"><a href="emplois.html">Emplois</a></li>
+                    <li class="footerli"><a href="contact.html">Clients</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Réseaux <div class="underline"><span></span></div></h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"><a href="https://www.facebook.com/profile.php?id=100093543413514"></a></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">MPMS Bâtiment © 2017 - Tous Droits Réservés</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
